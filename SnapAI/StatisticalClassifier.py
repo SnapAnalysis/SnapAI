@@ -33,7 +33,7 @@ def makeClassification(model,X_train, X_test, y_train, y_test):
     saver(model,"output/models/"+type(model).__name__)
 
 
-
+# @todo change parameters with config file values
 def HyperClassification(
     X_train, X_test, y_train, y_test,
     GradientBoostingLoss="deviance", #deviance,exponantial
